@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500&display=swap" rel="stylesheet">
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+   <div class="container">
+    <div class="card">
+    <h1>BMI Calculator</h1>
+    <label for="weight">Weight (Kg)</label>
+    <input id="weight" type="numbers">
+
+    <br>  <br>
+
+    <label for="height">Height (Meters)</label>
+    <input id="height" type="numbers">
+
+    <br><br><br> 
+
+
+<button onclick="calculateBmi()">Submit</button>
+<button onclick="reload()">Clear</button>
+
+<p id="heading"></p>
+<p id="bmi-output"></p>
+<p id="message"></p>
+  </div>
+<img id="Underweight" src="img/Underweight.png" alt="underweight" style="display: none;">
+<img id="Normalweight" src="img/normalweight.png" alt="Normalweight"style="display: none;">
+<img id="Overweight" src="img/overweight.png" alt="Overweight" style="display: none;">
+<img id="obese" src="img/obese.png" alt="obese" style="display: none;">
+</div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
